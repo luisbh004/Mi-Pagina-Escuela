@@ -1,0 +1,107 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f3f3f3; /* gris claro */
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #730202; /* guinda TECNM */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #a40a0a;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #d11c1c;
+    border-radius: 5px;
+}
+
+/* Título del edificio */
+main h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #730202;
+}
+
+/* Imagen principal */
+.imagen-principal {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.imagen-principal img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 3px solid #730202;
+    border-radius: 10px;
+}
+
+/* Galería */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.galeria img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #730202;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.galeria img:hover {
+    transform: scale(1.1);
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #d9d9d9;
+    margin-top: 30px;
+}
